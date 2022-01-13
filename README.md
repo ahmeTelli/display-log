@@ -33,6 +33,10 @@ Dosya içinde kelimeye göre aramaya yapılıp seçtiğiniz kelimenin geçtiği 
 
 Aynı zamanda seçilen log dosyasında en çok geçen kelimeler seçenek olarak sunulur <br>
 
+<br>
+Daha ayrıntılı bilgi almak için tanıtımı izleyebilirsiniz >>> https://youtu.be/O3ncClFwfG4 
+<br>
+
 
 ## İletişim
 mail --> ahmeta.telli@gmail.com

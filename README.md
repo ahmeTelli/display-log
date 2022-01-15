@@ -1,26 +1,42 @@
 # Linux sistemlerinde arayüz üzerinden log dosyalarını görüntüleme
 
 ## Log dosyaları nedir?
-Sistem ile alakalı hatalar,değişiklikler veya kullanıcı işlemleri gibi bilgileri saklayan dosyalardır. Karşılaşılan olumsuz 
-durumlarda ilk bakılacak yerlerden birisidir. 
+Sistem ile alakalı hatalar, değişiklikler veya kullanıcı işlemleri gibi bilgileri saklayan dosyalardır. Bütün linux sistemleri ön yükleme işlemleri, kernel ile alakalı problemler, uygulamalar ve diğer olaylar için log dosyaları oluşturur ve belirli bir süre saklar. 
+` var/log ` klasörü içinde bulunan log dosyaları ASCII metin formatında kaydedilir.
+ 
 
 
 ## Gereklilikler
-Kullanmak için zenity kütüphanesine sahip olmanız gerekmektedir
 
-for debian <br>
+Uygulamayı kullanmak için zenity programına sahip olmanız gerekmektedir
+
+debian ve ubuntu için <br>
 ```
 apt install zenity 
 ```
+komutunu kullanarak programı kurabilirsiniz.
 
 ## Kurulum
-Terminalinize kopyalayınız
+1.Zip olarak kurulum <br>
+  İndirdiğiniz zip dosyasından klasörü çıkartın ve klasör içinde bir terminal açın.
+  
+<br>
+2. Bir terminal açın ve alttaki komutu kopyalayarak terminalize yapıştırın ve çalıştırın. 
+<br>
+
 ```
 git clone https://github.com/ahmeTelli/display-log.git
 ```
+<br> bulunduğunuz dizinde terminale şu komutu yazın ` cd display-log ` 
+
 
 ## Kullanım
-indirdiğiniz dizinde `logDisplay.sh ` dosyasını çalıştırarak programı kullanabilirsiniz.
+indirdiğiniz dizinde ` . logDisplay.sh ` dosyasını çalıştırarak programı kullanabilirsiniz.
+
+Herhangi bir log dosyası seçtikten sonra size arama yapmak isteyip istemediğinizi soran bir seçenek ekranı çıkacaktır.
+
+[![image](https://www.linkpicture.com/q/sorgu.png)](https://www.linkpicture.com/view.php?img=LPic61e2683a160ce30739305)
+
 
 Seçilen herhangi bir log dosyayının admin yetkisinde okuma izni yoksa sizden root şifresi istenilecektir <br>
 
@@ -33,11 +49,17 @@ Dosya içinde kelimeye göre aramaya yapılıp seçtiğiniz kelimenin geçtiği 
 
 Aynı zamanda seçilen log dosyasında en çok geçen kelimeler seçenek olarak sunulur <br>
 
+Görüntülemek için sıkıştırılmış bir dosya seçebilirsiniz. Program kapandığında sıkıştırılmış dosya korunur.
+
 <br>
-Daha ayrıntılı bilgi almak için tanıtımı izleyebilirsiniz >>> https://youtu.be/O3ncClFwfG4 
+Daha ayrıntılı bilgi almak için tanıtımı izleyebilirsiniz > https://youtu.be/O3ncClFwfG4
 <br>
 
 
 ## İletişim
-mail --> ahmeta.telli@gmail.com
+Bana ulaşmak için 
+- [Mail](https://www.google.com)
+- [Linkedn](linkedin.com/in/ahmet-t-b138a1194)
+- [Youtube](https://youtu.be/O3ncClFwfG4) 
+
 

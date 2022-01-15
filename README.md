@@ -58,8 +58,8 @@ Daha ayrıntılı bilgi almak için tanıtımı izleyebilirsiniz > https://youtu
 
 ## İletişim
 Bana ulaşmak için 
-- [Mail](https://www.google.com)
-- [Linkedn](linkedin.com/in/ahmet-t-b138a1194)
+- [Mail](mailto:ahmeta.telli@gmail.com)
+- [Linkedn](https://www.linkedin.com/in/ahmet-t-b138a1194/)
 - [Youtube](https://youtu.be/O3ncClFwfG4) 
 
 

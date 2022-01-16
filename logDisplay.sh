@@ -36,12 +36,14 @@ if [[ "$FILE" == *.gz ]];then
   #sıkıştırılmış dosyanın içinden dosyanın yolunun alınması
   if [[ $password == "false" ]];then
     file_of_decompression=$(gunzip -l $FILE | awk '{if (NR!=1) {print $4}}')
+    gunzip -k $FILE
   else
     #izni olmayan kullanıcıya root şifresi ile dosya açma izni
     file_of_decompression=$(echo $password | sudo -S gunzip -l $FILE | awk '{if (NR!=1) {print $4}}')
+    
+    #sıkıştırılmış dosya silinmeden içinden gerekli dosyanın çıkartılması
+    echo $password | sudo -S gunzip -k $FILE
   fi
-  #sıkıştırılmış dosya silinmeden içinden gerekli dosyanın çıkartılması
-  echo $password | sudo -S gunzip -k $FILE
   FILE=$file_of_decompression
 else
   file_of_decompression="false"

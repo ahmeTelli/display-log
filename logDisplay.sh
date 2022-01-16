@@ -72,7 +72,8 @@ while : ;do
           array_of_most_common_word+=("$word")
       done
       #En çok geçen 10 kelimelin arama kutusunda seçenek olarak sunulması
-      value=$(zenity --entry --title "Arama Penceresi" --height="150" --width="400" --entry-text "${array_of_most_common_word[@]}" --text "Aramak yapmak istediğiniz kelimeyi yazınız")
+      value=$(zenity --entry --title "Arama Penceresi" --height="150" --width="400" --entry-text "${array_of_most_common_word[@]}" \
+        --text "Aramak yapmak istediğiniz kelimeyi yazınız")
       #seçeneğin geçtiği tüm satırların görüntülenmesi
       if [[ $password == "false" ]];then
         cat  $FILE | grep -a $value | zenity --text-info --height="500" --width="900"
@@ -88,12 +89,12 @@ done
 
 #Sıkıştırılmış dosya seçildi ise, çıkarılan dosyanın klasörden silinmesi
 if [[ $file_of_decompression != "false" ]];then
-  echo $password | sudo -S rm $file_of_decompression
+   if [[ $password == "false" ]];then
+      rm $file_of_decompression
+   else
+      echo $password | sudo -S rm $file_of_decompression
+   fi
 fi
-
-
-
-
 
 
 
